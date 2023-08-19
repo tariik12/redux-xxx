@@ -9,7 +9,7 @@ const initialCounterState ={
 };
 
 const initialUsersState ={
-    users:[{name:"anisul islam"}],
+    users:[{name:"Tarikul Islam"}],
 };
 //action - object- type, payload
 
@@ -24,11 +24,17 @@ const decrementCounter =() =>{
     }
 };
 
-const addUser = () =>{
+const addUser = (user) =>{
     return{
 
         type:ADD_USER,
-        payload: {name:"shakil"},
+        // payload: {name:"shakil"},
+        payload: user,
     };
     
 };
+
+//1. state
+//2. dispatch action
+//3. reducer
+//4. store
